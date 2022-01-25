@@ -1,0 +1,11 @@
+.center{
+    display: flex;
+    background-color: aliceblue;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+.centertext{
+    text-align: center;
+    background-color: aliceblue;
+}

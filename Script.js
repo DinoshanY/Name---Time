@@ -1,5 +1,4 @@
-
- alert("du før kanse epileptisk anfall")
+alert("du før kanse epileptisk anfall")
 
 const form = document.querySelector("form")
 form.addEventListener("submit", e =>{
@@ -34,7 +33,7 @@ form.addEventListener("submit", e =>{
 function annoy(){
   setTimeout(function() {
     document.getElementById("colorNumber").pause();
-    
+    loop();
 }, 3000);
   
 }
@@ -50,3 +49,16 @@ setTimeout(function() {
 }
 
 annoy();
+
+
+
+
+//ga opp å prøve å coble den til clocka
+function timstart(){
+  const ran = Math.floor(Math.random() * (100-1) -1)
+  document.getElementById("tall").innerHTML = ran;
+  setTimeout(timstart, 60000);
+}
+timstart();
+
+
