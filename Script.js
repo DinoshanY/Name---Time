@@ -1,5 +1,5 @@
 
- 
+ alert("du før kanse epileptisk anfall")
 
 const form = document.querySelector("form")
 form.addEventListener("submit", e =>{
@@ -10,10 +10,6 @@ form.addEventListener("submit", e =>{
     localStorage.setItem("name",input)
     let online = localStorage.getItem("name");
     document.getElementById("demo").innerHTML = "Velkommen, vi ønsker deg alt som er godt, "+ online+ "!";
-
-
-
-    
 
 
       let allUsernames = new Object();
@@ -31,6 +27,26 @@ form.addEventListener("submit", e =>{
   
       let show = sessionStorage["users"];
       document.getElementById("thisSession").innerHTML = show;
-  
+
 })
 
+
+function annoy(){
+  setTimeout(function() {
+    document.getElementById("colorNumber").pause();
+    
+}, 3000);
+  
+}
+
+function loop(){
+const a = Math.random() * (5000-1000) -1000
+setTimeout(function() {
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor
+    document.getElementById("colorNumber").play();
+    annoy()
+}, a);
+}
+
+annoy();
