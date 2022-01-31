@@ -1,4 +1,4 @@
-alert("du før kanse epileptisk anfall")
+alert("Du får kanse epileptisk anfall")
 
 const form = document.querySelector("form")
 form.addEventListener("submit", e =>{
@@ -30,35 +30,36 @@ form.addEventListener("submit", e =>{
 })
 
 
-function annoy(){
-  setTimeout(function() {
-    document.getElementById("colorNumber").pause();
-    loop();
-}, 3000);
+
   
-}
 
-function loop(){
-const a = Math.random() * (5000-1000) -1000
-setTimeout(function() {
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    document.body.style.backgroundColor = "#" + randomColor
-    document.getElementById("colorNumber").play();
-    annoy()
-}, a);
-}
-
-annoy();
-
-
-
-
-//ga opp å prøve å coble den til clocka
 function timstart(){
   const ran = Math.floor(Math.random() * (100-1) -1)
   document.getElementById("tall").innerHTML = ran;
-  setTimeout(timstart, 60000);
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor
 }
+
+
 timstart();
+
+
+  setTimeout(
+    () => { 
+      document.getElementById("colorNumber").play()
+      timstart();
+      
+      setInterval(() => {
+        document.getElementById("colorNumber").play()
+        timstart();
+        
+      }, 60 * 1000
+      );
+    },
+    (60 - new Date().getSeconds()) * 
+      1000,
+  );
+
+
 
 
