@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Master.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Master.css">
     
-    <title>Name & Time</title>
-</head>
-<body>
+         <title>Name & Time</title>
+    </head>
+    <body>
 
-    <form class="contrast" id="form" onsubmit="return false;">
-        <p>Skrive navne dit her!!!!!</p>
-        <input type="text" id="userInput" placeholder="Yourname">
-        <input type="submit">
-    </form>
-    <p id="demo"></p>
-    <p id="thisSession"></p>
-    <p id="did"></p>
+        <form class="contrast" id="form" onsubmit="return false;">
+            <p>Skrive navne dit her!!!!!</p>
+            <input type="text" id="userInput" placeholder="Yourname">
+            <input type="submit">  
+        </form>
 
+        <div class="border"></div>
 
-   
+        <div class="contrast">
+            <p id="velkommen"></p>
+            <p id="thisSession"></p>
+        </div>
+
+        <div class="border"></div>
+
         <p class="centertext">Ditt lykke tall dette minute</p> 
+
         <div class="center">
-        <div id="tall"></div>
-    </div>
+            <div id="ranTall"></div>
+        </div>
+
+        <form class="contrast rTF2" id="form" onsubmit="return false;">
+            <p>Gjett det neste lykke tale herr</p>
+            <input type="number" id="lykkenumber">
+            <input type="submit">  
+        </form>
+
+        <p id="gratis"></p>
     
-    <audio id="colorNumber">
-        <source src="https://freesound.org/data/previews/616/616770_1015240-lq.mp3" allow="autoplay" type="audio/mpeg">
-      </audio>
+        <audio id="annoing">
+            <source src="https://freesound.org/data/previews/616/616770_1015240-lq.mp3" allow="autoplay" type="audio/mpeg">
+        </audio>
+
         <script src="Script.js"></script>
 </body>
 </html>

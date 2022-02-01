@@ -10,10 +10,11 @@
     padding: 2%;
 }
 
-#tall{
+#ranTall{
     font-size: 5em;
     background-color: rgb(255, 255, 255);
     padding: 2%;
+    border: 2px solid;
 }
 
 body{
@@ -24,4 +25,13 @@ body{
 .contrast{
     background-color: rgb(255, 255, 255);
     padding: 2%;
+}
+
+.border{
+    border-bottom: 3px solid;
+}
+
+#gratis{
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
 }
