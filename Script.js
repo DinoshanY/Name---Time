@@ -86,6 +86,7 @@ numGuess.addEventListener("submit", (e) => {
     sounds.play().catch((_) => {});
     const randomColor = Math.floor(Math.random() * 16777215).toString(16);
     document.body.style.backgroundColor = "#" + randomColor;
+    window.lRan = Math.floor(Math.random() * (100 - 1) - 1);
   }
   // clearer input
   luckyness.value = "";
