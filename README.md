@@ -1,6 +1,6 @@
 ## Name---Time
 
-#Hva skal Name---Time Gjøre
+Hva skal Name---Time Gjøre
 
 Skal lagre et navn i localstorage og sende en velkommen medling med navne
 
