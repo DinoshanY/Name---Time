@@ -1,37 +1,47 @@
-.center{
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
+.center {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
 }
-.centertext{
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
-}
-
-#ranTall{
-    font-size: 5em;
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
-    border: 2px solid;
+.centertext {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
 }
 
-body{
-    padding: 0;
-    margin: 0;
+#ranTall {
+  font-size: 5em;
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  border: 2px solid;
 }
 
-.contrast{
-    background-color: rgb(255, 255, 255);
-    padding: 2%;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.border{
-    border-bottom: 3px solid;
+.contrast {
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
 }
 
-#gratis{
-    background-color: rgb(255, 255, 255);
-    font-size: 2rem;
+.border {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.border-top {
+  border-top: 3px solid rgb(0, 0, 0);
+}
+
+.border-line {
+  border-top: 3px dashed rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.tables {
+  border-top: 3px solid rgb(0, 0, 0);
+  border-bottom: 3px solid rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }
